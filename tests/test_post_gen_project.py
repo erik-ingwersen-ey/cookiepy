@@ -14,6 +14,7 @@ Unit tests summary
 - :func:`test_remove_file`: Test `remove_file` function.
 - :func:`test_create_dotenv`: Test `create_dotenv` function.
 """
+
 import sys
 import pytest
 from pathlib import Path
@@ -22,11 +23,11 @@ from pathlib import Path
 current_dir = Path.cwd()
 hooks_dirs = list(current_dir.glob('**/hooks'))
 max_tries = 2
-while len(hooks_dirs) == 0 and max_tries > 0:
+while not hooks_dirs and max_tries > 0:
 	current_dir = current_dir.parent
 	hooks_dirs = list(current_dir.glob('**/hooks'))
 
-if len(hooks_dirs) == 0:
+if not hooks_dirs:
 	raise ModuleNotFoundError('No hooks directory found')
 
 hooks_dir = [str(filepath) for filepath in hooks_dirs if filepath.is_dir()][0]

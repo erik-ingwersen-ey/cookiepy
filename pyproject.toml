@@ -39,7 +39,7 @@ github3-py = { version = '^3.2.0', optional = false }
 mypy = { version = '^0.991', optional = false }
 poetry = { version = '^1.1.12', optional = false }
 pylint = { version = '^2.15.9', optional = false }
-python-dotenv = { version = '0.21.0', optional = false }
+python-dotenv = { version = '0.21.1', optional = false }
 tomli = { version = '^2.0.1', optional = false }
 pyversions = "^0.0.3"
 jupyter = "^1.0.0"

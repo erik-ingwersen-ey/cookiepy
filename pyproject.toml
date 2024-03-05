@@ -36,7 +36,7 @@ commitizen = { version =  "^2.38.0", optional = false }
 cookiecutter = { version = '^2.1.1', optional = false }
 flake8 = { version = '^6.0.0', optional = false }
 github3-py = { version = '^3.2.0', optional = false }
-mypy = { version = '^0.991', optional = false }
+mypy = { version = '^1.0.0', optional = false }
 poetry = { version = '^1.1.12', optional = false }
 pylint = { version = '^2.15.9', optional = false }
 python-dotenv = { version = '0.21.0', optional = false }
